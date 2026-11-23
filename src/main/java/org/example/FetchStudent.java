@@ -12,7 +12,7 @@ public class FetchStudent {
                 .addAnnotatedClass(org.example.Students.class).configure().buildSessionFactory();
         Session session=factory.openSession();
 
-        //trasaction is required for manipulating data
+        //trasaction is required for manipulating data not while accessing data
 
         s2=session.get(Students.class,1);
         System.out.println(s2);

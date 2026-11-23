@@ -17,7 +17,7 @@ public class FetchData {
                 .configure().buildSessionFactory();
         Session session=sf.openSession();
         // the below query returns raw type
-        //Query<Brand> query=session.createQuery("from Brand");
+        // Query query2=session.createQuery("from Brand");
         // returns only Brand type
         Query<Brand> query=session.createQuery("from Brand",Brand.class);
         System.out.println(query);

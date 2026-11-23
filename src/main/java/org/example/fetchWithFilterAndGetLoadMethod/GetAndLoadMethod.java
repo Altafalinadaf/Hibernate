@@ -14,9 +14,9 @@ public class GetAndLoadMethod {
         // get will display the query even when you print b or not
         Brand b=session.get(Brand.class,2);
 
-        // this will not through the query unless you don't print b2
+        // this will not throw the query unless you don't print b2
         Brand b2=session.load(Brand.class,3);
-//        System.out.println(b2); // if you print this then load will through query else no query
+//        System.out.println(b2); // if you print this then load will throw query else no query
 
         // new load with is getReference
         Brand b3= session.getReference(Brand.class, 4);
